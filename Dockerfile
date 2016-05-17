@@ -1,4 +1,4 @@
-FROM btooncall/centos7
+FROM btooncall/centos7:devel
 
 RUN mkdir -p /opt/ 2>/dev/null; 
 WORKDIR /opt/
