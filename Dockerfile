@@ -13,4 +13,4 @@ ADD filebeat.yml /etc/filebeat/filebeat.yml
 
 ENV JAVA_HOME /etc/alternatives/jre_1.7.0_openjdk
 
-ENTRYPOINT [ "/usr/bin/filebeat", "-c /etc/filebeat/filebeat.yml" ]
+ENTRYPOINT [ "/usr/bin/filebeat", "-c", "/etc/filebeat/filebeat.yml" ]
