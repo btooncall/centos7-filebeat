@@ -1,0 +1,14 @@
+filebeat:
+  prospectors:
+    -
+      paths:
+        - /opt/tomcat/logs/*.log
+      input_type: log
+  registry_file: /var/lib/filebeat/registry
+output:
+  elasticsearch:
+    hosts: ["elasticsearch:9200"]
+shipper:
+
+logging:
+  to_syslog: false
