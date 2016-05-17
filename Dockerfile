@@ -1,6 +1,6 @@
 FROM btooncall/centos7:devel
 
-RUN mkdir -p /opt/ 2>/dev/null; 
+RUN mkdir -p /opt/tomcat/logs 2>/dev/null; 
 WORKDIR /opt/
 
 RUN wget -q https://download.elastic.co/beats/filebeat/filebeat-1.2.2-x86_64.rpm \
